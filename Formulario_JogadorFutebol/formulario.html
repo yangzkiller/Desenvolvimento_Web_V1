@@ -1,0 +1,191 @@
+<!-- DECLARAÇÃO PARA INFORMAR AO NAVEGADOR QUAL É A VERSÃO DO HTML UTILIZADA qual é a versão do HTML utilizada no arquivo -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- METADADOS -->
+        <!-- COMUNICA AOS NAVEGADORES QUAL É O FORMATO DE CODIFICAÇÃO DE CARACTERES UTILIZADO -->
+        <meta charset="utf-8">
+        <!-- IRÁ PREPARA-LO PARA OS DIFERENTES DISPOSITIVOS EXISTENTES: VALORES: -->
+        <!-- width=device-width = igualar a largura do layout à largura do dispositivo --> 
+        <!-- initial-scale=1 = define o nível de zoom inicial -->
+        <!-- shrink-to-fit=no = ajuda sua página a não encolher para caber -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="style_formulario.css" media="all">
+        
+        <title>Cadastro de Atleta</title>
+    </head>
+
+    <body>
+        <!-- CABEÇALHO -->
+        <div>
+            <h1 id="titulo">Cadastro de jogador</h1>
+            <p id="subtitulo">Informe seus dados</p>
+            <br>
+        </div>
+
+        <!-- INICIO -->
+        <!-- TAG DE CRIAÇÃO DE FORMULARIOS -->
+        <form>
+            <h3 id="titulo">Informações pessoais</h3>
+            <!-- AGRUPA ELEMENTOS -->
+            <fieldset class="grupo">
+                <!-- CAMPO  - NOME-->
+                <div class="campo">
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <!-- CAMPO - SOBRENOME -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+
+                <!-- CAMPO - CPF -->
+                <div class="campo">
+                    <label for="cpf"><strong>CPF:</strong></label>
+                    <input type="text" name="cpf" id="cpf" required>
+                </div>
+
+                <!-- CAMPO  - NASCIMENTO- -->
+                <div>
+                <label for="nasc"><strong>Data de nascimento: </strong></label>
+                <input type="date" id="nasc" name="nasc" required>
+                </div>
+
+            </fieldset>
+
+            <h3 id="titulo">Contato</h3>
+            <!-- AGRUPA ELEMENTOS -->
+            <fieldset class="grupo">
+                <!-- CAMPO - TELEFONE -->
+                <div class="campo">
+                    <label for="tel"><strong>Telefone:</strong></label>
+                    <input type="text" name="tel" id="tel" required>
+                </div>
+
+                <!-- CAMPO - EMAIL -->
+                <div class="campo">
+                    <label for="email"><strong>Email:</strong></label>
+                    <input type="text" name="email" id="email" required>
+                </div>
+            </fieldset>
+
+            <h3 id="titulo">Informações fisicas</h3>
+            <!-- AGRUPA ELEMENTOS -->
+            <fieldset class="grupo">
+                <!-- CAMPO  - ALTURA-->
+                <div class="campo">
+                    <label for="altura"><strong>Altura:</strong></label>
+                    <input type="text" name="altura" id="altura" required>
+                </div>
+
+                  <!-- CAMPO - PESO -->
+                  <div class="campo">
+                    <label for="peso"><strong>Peso:</strong></label>
+                    <input type="text" name="peso" id="peso" required>
+                </div>
+
+                <!-- CAMPO - CHUTEIRA -->
+                <div class="campo">
+                    <label for="chuteira"><strong>Número da chuteira:</strong></label>
+                    <input type="text" name="chuteira" id="chuteira" required>
+                </div>
+
+                <!-- CAMPO - ROUPA (select option)  -->
+                <div class="campo">
+                    <label for="roupa"><strong>Tamanho uniforme:</strong></label>
+                    <select id="roupa" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <h3 id="titulo">Posicionamento</h3>
+            <!-- OPÇÕES DE POSICIONAMENTO (radio button)  -->
+            <div class="campo"> 
+                <label><strong>Qual sua posição: </strong></label>
+                <label>
+                    <input type="radio" name="pos" value="goleiro" checked>GOL
+                </label>
+                <label>
+                    <input type="radio" name="pos" value="lateral">LAT
+                </label>
+                <label>
+                    <input type="radio" name="pos" value="zagueiro">ZAG
+                </label>
+                <label>
+                    <input type="radio" name="pos" value="volante">VOL
+                </label>
+                <label>
+                    <input type="radio" name="pos" value="meia">MC
+                </label>
+                <label>
+                    <input type="radio" name="pos" value="atacante">ATA
+                </label>
+            </div>
+
+            <fieldset class="grupo">
+                <!-- OPÇÕES FUNÇAO (checkbox) -->
+                <div id="check">
+                    <label><strong>Selecione as funçõe que atua:</strong></label><br><br>
+                    <input type="checkbox" id="funcao1" name="funcao1" value="Goleiro">
+                    <label for="funcao1"> Goleiro</label>
+
+                    <input type="checkbox" id="funcao2" name="funcao2" value="Lateral-direito">
+                    <label for="funcao2"> Lateral-direito</label>
+
+                    <input type="checkbox" id="funcao3" name="funcao3" value="Lateral-esquerdo">
+                    <label for="funcao3"> Lateral-esquerdo</label>
+
+                    <input type="checkbox" id="funcao4" name="funcao4" value="Alas">
+                    <label for="funcao4"> Alas</label>
+
+                    <input type="checkbox" id="funcao5" name="funcao5" value="Líbero">
+                    <label for="funcao5"> Líbero</label>
+
+                    <input type="checkbox" id="funcao6" name="funcao6" value="Volante">
+                    <label for="funcao6"> Volante</label>
+
+                    <input type="checkbox" id="funcao7" name="funcao7" value="Meia de contenção">
+                    <label for="funcao7"> Meia de contenção</label>
+
+                    <input type="checkbox" id="funcao8" name="funcao8" value="Meia de armação">
+                    <label for="funcao8"> Meia de armação</label>
+
+                    <input type="checkbox" id="funcao9" name="funcao9" value="Meia pelos extremos">
+                    <label for="funcao9"> Meia pelos extremos</label>
+
+                    <input type="checkbox" id="funcao10" name="funcao10" value="Segundo atacante">
+                    <label for="funcao10"> Segundo atacante</label>
+
+                    <input type="checkbox" id="funcao11" name="funcao11" value="Ponta-esquerda">
+                    <label for="funcao11"> Ponta-esquerda</label>
+
+                    <input type="checkbox" id="funcao12" name="funcao12" value="Ponta-direita">
+                    <label for="funcao12"> Ponta-direita</label>
+                    
+                    <input type="checkbox" id="funcao13" name="funcao13" value="Centroavante">
+                    <label for="funcao13"> Centroavante</label>
+                </div>
+            </fieldset>
+
+            <!-- CAIXA DE TEXTO -->
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco mais sobre voce: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            <!-- ENVIAR FORMULARIO -->
+            <button class="botao" type="submit" onsubmit="">Concluído</button>       
+
+        </form>
+    </body>
+
+</html>
