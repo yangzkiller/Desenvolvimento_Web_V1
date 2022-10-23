@@ -21,14 +21,14 @@
         <!-- CABEÇALHO -->
         <div>
             <h1 id="titulo">Cadastro de jogador</h1>
-            <p id="subtitulo">Informe seus dados</p>
+            <p id="titulo">Informe seus dados</p>
             <br>
         </div>
 
         <!-- INICIO -->
         <!-- TAG DE CRIAÇÃO DE FORMULARIOS -->
         <form>
-            <h3 id="titulo">Informações pessoais</h3>
+            <h3 id="subtitulo">Informações pessoais</h3>
             <!-- AGRUPA ELEMENTOS -->
             <fieldset class="grupo">
                 <!-- CAMPO  - NOME-->
@@ -50,14 +50,14 @@
                 </div>
 
                 <!-- CAMPO  - NASCIMENTO- -->
-                <div>
-                <label for="nasc"><strong>Data de nascimento: </strong></label>
-                <input type="date" id="nasc" name="nasc" required>
+                <div class="campo">
+                    <label for="nasc"><strong>Data de nascimento: </strong></label>
+                    <input type="date" id="nasc" name="nasc" required>
                 </div>
 
             </fieldset>
 
-            <h3 id="titulo">Contato</h3>
+            <h3 id="subtitulo">Contato</h3>
             <!-- AGRUPA ELEMENTOS -->
             <fieldset class="grupo">
                 <!-- CAMPO - TELEFONE -->
@@ -73,7 +73,7 @@
                 </div>
             </fieldset>
 
-            <h3 id="titulo">Informações fisicas</h3>
+            <h3 id="subtitulo">Informações fisicas</h3>
             <!-- AGRUPA ELEMENTOS -->
             <fieldset class="grupo">
                 <!-- CAMPO  - ALTURA-->
@@ -106,31 +106,31 @@
                 </div>
             </fieldset>
 
-            <h3 id="titulo">Posicionamento</h3>
-            <!-- OPÇÕES DE POSICIONAMENTO (radio button)  -->
-            <div class="campo"> 
-                <label><strong>Qual sua posição: </strong></label>
-                <label>
-                    <input type="radio" name="pos" value="goleiro" checked>GOL
-                </label>
-                <label>
-                    <input type="radio" name="pos" value="lateral">LAT
-                </label>
-                <label>
-                    <input type="radio" name="pos" value="zagueiro">ZAG
-                </label>
-                <label>
-                    <input type="radio" name="pos" value="volante">VOL
-                </label>
-                <label>
-                    <input type="radio" name="pos" value="meia">MC
-                </label>
-                <label>
-                    <input type="radio" name="pos" value="atacante">ATA
-                </label>
-            </div>
-
+            <h3 id="subtitulo">Posicionamento</h3>
             <fieldset class="grupo">
+                <!-- OPÇÕES DE POSICIONAMENTO (radio button)  -->
+                <div class="campo"> 
+                    <label><strong>Qual sua posição: </strong></label>
+                    <label>
+                        <input type="radio" name="pos" value="goleiro" checked>GOL
+                    </label>
+                    <label>
+                        <input type="radio" name="pos" value="lateral">LAT
+                    </label>
+                    <label>
+                        <input type="radio" name="pos" value="zagueiro">ZAG
+                    </label>
+                    <label>
+                        <input type="radio" name="pos" value="volante">VOL
+                    </label>
+                    <label>
+                        <input type="radio" name="pos" value="meia">MC
+                    </label>
+                    <label>
+                        <input type="radio" name="pos" value="atacante">ATA
+                    </label>
+                </div>
+
                 <!-- OPÇÕES FUNÇAO (checkbox) -->
                 <div id="check">
                     <label><strong>Selecione as funçõe que atua:</strong></label><br><br>
@@ -151,7 +151,8 @@
 
                     <input type="checkbox" id="funcao6" name="funcao6" value="Volante">
                     <label for="funcao6"> Volante</label>
-
+                    <br>
+                    <br>
                     <input type="checkbox" id="funcao7" name="funcao7" value="Meia de contenção">
                     <label for="funcao7"> Meia de contenção</label>
 
@@ -160,7 +161,8 @@
 
                     <input type="checkbox" id="funcao9" name="funcao9" value="Meia pelos extremos">
                     <label for="funcao9"> Meia pelos extremos</label>
-
+                    <br>
+                    <br>
                     <input type="checkbox" id="funcao10" name="funcao10" value="Segundo atacante">
                     <label for="funcao10"> Segundo atacante</label>
 
